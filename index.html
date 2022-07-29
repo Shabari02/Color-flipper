@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <title>Color Flipper</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="#">Color Flipper</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav   ms-auto me-4">
+              <li class="nav-item">
+                <a class="nav-link fs-4" id="hex-page" aria-current="page" href="#">HEX</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4" id="rgb-page" href="#">RGB</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4" id="hsl-page" href="#">HSL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <main class="mt-5">
+            <div class="container text-center" id="hex-wrapper">
+                <h2 class="p-3 mb-2  bg-dark text-white">Background-color: <span class="color fs-3" id="hexColor">#ffffff</span></h2>
+                <button type="button" class="btn btn-outline-dark m-2 fs-5" id="hexBtn">Click Me</button>
+            </div>
+            <div class="container text-center" id="rgb-wrapper">
+                <h2 class="p-3 mb-2  bg-dark text-white">Background-color: <span class="color fs-3" id="rgbColor">rgb(120, 191, 255)</span></h2>
+                <button type="button" class="btn btn-outline-dark m-2 fs-5" id="rgbBtn">Click Me</button>
+            </div>
+            <div class="container text-center" id="hsl-wrapper">
+                <h2 class="p-3 mb-2  bg-dark text-white">Background-color: <span class="color fs-3" id="hslColor">hsl(26, 100%, 86%)</span></h2>
+                <button type="button" class="btn btn-outline-dark m-2 fs-5" id="hslBtn">Click Me</button>
+            </div>
+        </main>
+
+
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
